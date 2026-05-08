@@ -1,0 +1,86 @@
+/* ── Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Georgia', serif;
+  background: #2c1a0e;
+  color: #f5e6c8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* ── Layout ── */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  max-width: 840px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.4rem;
+  letter-spacing: 0.12em;
+  color: #f5e6c8;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* ── Timer display ── */
+.timer-display {
+  font-size: 3.2rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+  background: rgba(0,0,0,0.35);
+  padding: 0.4rem 1.6rem;
+  border-radius: 8px;
+  color: #ffe8a0;
+  text-shadow: 0 0 12px rgba(255,220,80,0.5);
+}
+
+/* ── Canvas ── */
+#barnCanvas {
+  border-radius: 12px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.7);
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Goat info ── */
+.goat-info {
+  font-size: 1.1rem;
+  color: #d4bc8a;
+}
+
+/* ── Controls ── */
+.controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.55rem 1.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s, opacity 0.15s;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.btn:active { transform: translateY(1px); box-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+.btn:disabled { opacity: 0.38; cursor: default; pointer-events: none; }
+
+.btn-start  { background: #5a9e4e; color: #fff; }
+.btn-start:hover  { background: #6db560; }
+.btn-pause  { background: #c07c2a; color: #fff; }
+.btn-pause:hover  { background: #d99035; }
+.btn-reset  { background: #7a3b2e; color: #fff; }
+.btn-reset:hover  { background: #9a4c3a; }

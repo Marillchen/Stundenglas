@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stundenglas – Arbeitsstunden</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Stundenglas</h1>
+
+    <div class="timer-display">
+      <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+
+    <canvas id="barnCanvas" width="800" height="480"></canvas>
+
+    <p class="goat-info">
+      <span id="goatCount">7</span> von 7 Ziegen noch im Stall
+    </p>
+
+    <div class="controls">
+      <button id="startBtn" class="btn btn-start">▶ Start</button>
+      <button id="pauseBtn" class="btn btn-pause" disabled>⏸ Pause</button>
+      <button id="resetBtn" class="btn btn-reset">↺ Zurücksetzen</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
